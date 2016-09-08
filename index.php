@@ -6,7 +6,7 @@
 <div class="col-md-6 col-lg-4">
 	<?php require_once 'widgets/roomstoday.php';?>
 </div>
-<div class="col-md-6 col-lg-4">
+<div class="col-md-6 col-lg-4 hej">
 	<?php require_once 'widgets/events.php';?>
 </div>
 <?php require_once 'inc/footer.php';?>
