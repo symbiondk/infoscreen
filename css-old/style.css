@@ -1,0 +1,131 @@
+/* Styling by Kristian Seedorff, kbs@symbion.dk */
+
+/***********************
+	Globals 
+************************/
+body {
+	background: url('../img/symbionbg.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.row {max-width: 100%}
+
+/***********************
+	Typography
+************************/
+
+h1,h2,h3,h4,h5 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+h1 { font-size: 22px;}
+h2 {font-size: 18px;}
+h3 {font-size: 14px;}
+
+h1.title {
+	color: inherit;
+	line-height: 1;
+	text-align: center;
+	font-size: 15px;
+	margin:0;
+}
+.subtitle {
+	font-weight:700;
+	font-size: 80%;
+}
+
+/***********************
+	Meta bar
+************************/
+.top-bar {
+	background:rgba(255,255,255,0.8);
+	margin-bottom:20px;
+
+}
+/***********************
+	Cards 
+************************/
+#kantine-menu {
+	background-color: rgba(143, 68, 65, 0.8);
+	margin-bottom: 1.875rem;
+}
+#opslag {
+	background-color: rgba(85, 173, 63, 0.8);
+}
+#konference {
+	background-color: rgba(65, 75, 143, 0.8);
+}
+#events {
+	background-color: rgba(65, 100, 143, 0.8);
+}
+
+.card {
+    position:relative;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card.dark > * {
+	color: #fff;
+}
+.callout {	
+    background:initial;
+    border:none;
+    margin:0;
+    max-height: 85vh;
+    overflow-y:scroll;
+}
+#bulletin_board_posts {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+#bulletin_board_posts .bulletin_dates {
+	font-size: 12px;
+}
+#btn_bulletin_open_dialog {
+	position: absolute;
+	right:14px;
+	top:14px;
+}
+
+
+
+
+/***********************
+	Konference table 
+************************/
+.dailyEvents {
+	font-size: 12px;
+}
+table tbody {
+	background:none;
+	border:none;
+}
+.dark table tbody tr:nth-child(even) {
+	background-color: rgba(0,0,0,0.13);
+}
+.dark table tfoot, table thead {
+	background-color: rgba(0,0,0,0.13);
+	color: #fff;
+	border:none;
+}
+
+
+/***********************
+	Events
+************************/
+.event.row {
+	background: rgba(255, 255, 255,0.4);
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
+.event .event-date {
+	font-size: 70%;
+}
