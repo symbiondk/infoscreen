@@ -1,5 +1,5 @@
 <div class="card card-info card-inverse info">
-	<img class="card-img-top img-fluid" src="inc/img/ask.jpg" alt="Information">
+	<img class="card-img-top img-fluid" src="core/inc/img/ask.jpg" alt="Information">
   <div class="card-block">
     	<h2 class="card-title">Information</h2>
     	<!-- Button trigger modal -->
@@ -26,7 +26,7 @@
       	<div class="row">
       		<div class="col-md-4">
 	      		<div class="card taxi-yellow">
-	      		  <img class="card-img-top" src="inc/img/taxi/amagerobro.jpg" alt="Card image cap">
+	      		  <img class="card-img-top" src="core/inc/img/taxi/amagerobro.jpg" alt="Card image cap">
 	      		  <div class="card-block">
 	      		    <h4 class="card-title">Amager-øbro taxa</h4>
 	      		    <p class="card-text">Tlf: 27 27 27 27</p>
@@ -35,7 +35,7 @@
       		</div>
       		<div class="col-md-4">
 	      		<div class="card taxi-green">
-	      		  <img class="card-img-top" src="inc/img/taxi/taxinord.jpg" alt="Card image cap">
+	      		  <img class="card-img-top" src="core/inc/img/taxi/taxinord.jpg" alt="Card image cap">
 	      		  <div class="card-block">
 	      		    <h4 class="card-title">Taxinord</h4>
 	      		    <p class="card-text">Tlf: 48 48 48 48</p>
@@ -44,7 +44,7 @@
       		</div>
       		<div class="col-md-4">
 	      		<div class="card taxi-midnightblue">
-	      		  <img class="card-img-top" src="inc/img/taxi/4x35.jpg" alt="Card image cap">
+	      		  <img class="card-img-top" src="core/inc/img/taxi/4x35.jpg" alt="Card image cap">
 	      		  <div class="card-block">
 	      		    <h4 class="card-title">Taxa 4x35</h4>
 	      		    <p class="card-text">Tlf: 35 35 35 35</p>

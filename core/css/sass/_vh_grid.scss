@@ -1,0 +1,10 @@
+  // y-grid rows
+@for $i from 1 through 12 {
+  .vh-lg-#{$i} {
+    // Only needed if used outside Bootstrap
+    //box-sizing: border-box;
+    height: ($i/12)*100vh;
+    overflow-y: scroll;
+  }
+}
+.y-grid .card { height: 100%;}

@@ -7,7 +7,7 @@ $updated_date=date('d. M.', strtotime($data['feed']['updated']['$t']));
 $the_day=array ('week','Mandag','Tirsdag','Onsdag','Torsdag','Fredag','Lørdag','Søndag');
 ?>
 <div class="card menu bg-green">
-  <img class="card-img-top img-fluid" src="inc/img/menu.jpg" alt="Card image cap">
+  <img class="card-img-top img-fluid" src="core/inc/img/menu.jpg" alt="Card image cap">
   <div class="card-block">
     	<h2 class="card-title">Ugemenu</h2>
     	<ul class="no-style-list">

@@ -20,17 +20,17 @@
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Oswald:400,700' rel='stylesheet' type='text/css'>    
     <!-- FontAwesome icon font -->
-    <link rel="stylesheet" href="inc/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="core/inc/font-awesome/css/font-awesome.min.css">
     <!-- Bootstrap 4 + custom css -->
-    <link href="css/style.min.css" rel="stylesheet" type='text/css'>
+    <link href="core/css/style.min.css" rel="stylesheet" type='text/css'>
   </head>
 
   <body>
   <?php
-  $ga_file = 'inc/ga.php';
+  $ga_file = '/inc/ga.php';
 
   if (file_exists($ga_file)) {
-      include_once($ga_file);
+      include_once(__DIR__.$ga_file);
   };
   ?>
   <div class="container">
