@@ -5,7 +5,7 @@ $data=json_decode($json,true);
 ?>
 
 <div class="card room-feed card-block">
-  <h2 class="card-title">Lokaleoversigt i dag</h2>
+  <h2 class="card-title">Room overview today</h2>
     <!-- room loop -->
     <?php
         foreach($data as $key => $item){ 

@@ -5,7 +5,7 @@ $json=XmlToJson::Parse("http://symbion.dk/index.php?id=2471&type=9818");
 $data=json_decode($json,true);
 ?>
 <div class="card feed event-feed card-block card-inverse card-primary">
-  <h2 class="card-title">Kommende Events</h2>
+  <h2 class="card-title">Upcoming Events</h2>
     <?php
       $i = 0;
       foreach($data['item'] as $key => $entry){ 
