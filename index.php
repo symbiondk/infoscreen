@@ -1,3 +1,4 @@
+<?php require_once ('config.php');?>
 <?php require_once (__DIR__.'/inc/header.php');?>
 <div class="col-md-6 col-lg-4">
 	<?php require_once (__DIR__.'/widgets/menu.php');?>

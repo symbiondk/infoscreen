@@ -1,8 +1,10 @@
     </div>
     <!-- /.container -->
-    <footer class="footer-bar">
-      <h1 class="title" onclick="resetTimeout();">touchscreen.symbion.dk</h1>
-    </footer>
+    <?php
+      if (file_exists('footer_include.php')) {
+        require_once('footer_include.php');
+      }
+    ?>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

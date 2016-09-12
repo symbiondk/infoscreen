@@ -1,3 +1,7 @@
+<?php
+  if (file_exists('header.php')): ?>
+  <?php require_once('header.php'); ?> 
+  <?php else: ?>
 <!DOCTYPE html>
 <html lang="da">
   <head>
@@ -15,7 +19,7 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
     <meta name="theme-color" content="#1f647e">
 
-    <title>Symbion dashboard</title>
+    <title><?php the_title(); ?></title>
 
     <!-- Font -->
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Oswald:400,700' rel='stylesheet' type='text/css'>    
@@ -34,3 +38,4 @@
   };
   ?>
   <div class="container">
+<?php endif; ?>
