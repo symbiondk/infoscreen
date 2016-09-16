@@ -5,6 +5,9 @@
   font-size: 0.9rem;
   margin-bottom: 0px;
 }
+.card.feed h3 {
+  margin-bottom: 0;
+}
 .card.feed .feed-item {
   margin-bottom: 15px;
 }
@@ -14,30 +17,12 @@
 .card.feed .feed-meta {
   font-size: 0.8rem;
 }
-$orbit-feed: $bright-orange;
-.card.feed.orbit {
-  $feed-background: lighten($orbit-feed, 40%);
-  background: $feed-background;
-  border-color: $feed-background;
-}
-.card.feed.orbit a {
-  color: $orbit-feed;
-}
-$symbion-feed: $muted-green;
-.card.feed.symbion {
-  $feed-background: lighten($symbion-feed, 47%);
-  background: $feed-background;
-  border-color: $feed-background;
-}
-.card.feed.symbion a {
-  color: $symbion-feed;
-}
 
 /*****************
   Message board - post feed box
 ******************/
 .room-feed .room:nth-child(odd) {
-    background: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.1);
 }
 .card.post-feed {
   background: lighten( $brand-info, 20% );
@@ -47,9 +32,6 @@ $symbion-feed: $muted-green;
 /*****************
   Event feed
 ******************/
-.event-feed {
-	color: #fff;
-}
 .card.feed.event-feed h4 {
   font-size: 0.8rem;
 }
@@ -60,7 +42,7 @@ $symbion-feed: $muted-green;
 	padding: 10px 0;
 	margin-left: -1.3rem;
 	margin-right: -1.3rem;
-  line-height: 15px;
+  line-height: 1rem;
 }
 .event-feed .event:last-child, .room-feed .room:last-child {
   margin-bottom: -1.25rem;
@@ -98,10 +80,6 @@ $symbion-feed: $muted-green;
 /*****************
   Room feed
 ******************/
-.room-feed {
-  background: lighten( $brand-success, 30% );
-  border-color: lighten( $brand-success, 30% );
-}
 .room-feed .room-description, .post-feed .post-row {
   word-break: keep-all;
   padding-left: 1.3rem;
@@ -118,5 +96,6 @@ $symbion-feed: $muted-green;
 }
 .room .name {
   font-size: 0.8rem;
+  font-weight: 700;
   margin:0;
 }

@@ -4,7 +4,7 @@ require_once (__DIR__.'/tools/xmltojson.php');
 $json=XmlToJson::Parse("http://symbion.dk/index.php?id=2471&type=9818");
 $data=json_decode($json,true);
 ?>
-<div class="card feed event-feed card-block card-inverse card-primary">
+<div class="card feed event-feed card-block bg-creators">
   <h2 class="card-title">Upcoming Events</h2>
     <?php
       $i = 0;
@@ -23,12 +23,12 @@ $data=json_decode($json,true);
 			?>
 	   	<!-- Event loop -->
 	   	<div class="row event">
-	   	  <div class="col-xs-3 event-meta">
+	   	  <div class="col-xs-3 event-meta no-padding-r">
 	   	    <span class="event-date"><?php echo date('d', $epoch); ?></span>
 	   	    <span class="event-month"><?php echo date('M', $epoch); ?></span>
 	   	  </div>
 	   	  <div class="col-xs-9 event-description">
-	   	    <h4><?php echo $entry['title']; ?></h4>
+	   	    <h3><?php echo $entry['title']; ?></h3>
 	   	    <ul class="event-details no-style-list">
 	   	    	<li><i class="sep-icon first fa fa-home"></i><?php if( empty($entry['location-id-title']) ) {echo $entry['location'];} else {echo $entry['location-id-title'];} ?></li>
 	   	    	<li><i class="sep-icon first fa fa-<?php echo $cat_icon; ?>"></i><?php echo $entry['category-title']; ?></li>

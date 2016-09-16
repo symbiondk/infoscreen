@@ -1,10 +1,10 @@
 <?php 
-$url="http://booking.symbion.dk/return_daily.asp";
+$url="http://booking.symbion.dk/return_daily.asp?sted=10";
 $json=file_get_contents($url);
 $data=json_decode($json,true);
 ?>
 
-<div class="card room-feed card-block">
+<div class="card room-feed card-block bg-midnightblue">
   <h2 class="card-title">Room overview today</h2>
     <!-- room loop -->
     <?php
@@ -25,4 +25,8 @@ $data=json_decode($json,true);
     </div>
     <!-- /room loop -->
     <?php } ?>
+
+    <?php if (is_null($data)): ?>
+      <div class="na">No rooms booked today</div>
+    <?php endif; ?>
 </div>

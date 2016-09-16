@@ -1,6 +1,6 @@
 <?php
-  if (file_exists('header.php')): ?>
-  <?php require_once('header.php'); ?> 
+  if (file_exists('theme/header.php')): ?>
+  <?php require_once('theme/header.php'); ?> 
   <?php else: ?>
 <!DOCTYPE html>
 <html lang="da">
@@ -30,12 +30,5 @@
   </head>
 
   <body>
-  <?php
-  $ga_file = '/inc/ga.php';
-
-  if (file_exists($ga_file)) {
-      include_once(__DIR__.$ga_file);
-  };
-  ?>
   <div class="container">
 <?php endif; ?>

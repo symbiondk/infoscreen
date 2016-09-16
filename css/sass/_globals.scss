@@ -14,8 +14,24 @@ body {
     background-size: cover;
   }
 }
+* {
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  overflow: -moz-scrollbars-none;
+}
+.text-center {
+  text-align: center;
+}
+.na {
+  font-style:italic;
+}
 .no-padding {
   padding:0;
+}
+.no-padding-l {
+  padding-left:0;
+}
+.no-padding-r {
+  padding-right:0;
 }
 form label {
  margin-bottom: .2rem;
@@ -59,7 +75,7 @@ ul.no-style-list {
   bottom:0;
   width:100%;
   color: #fff;
-  z-index: -1;
+  z-index: 1;
 }
 .footer-bar h1 {
   text-align: left;
@@ -69,4 +85,16 @@ ul.no-style-list {
     position:initial;
     margin-top:10px;
   }
+}
+/*****************
+  Disable modal
+******************/
+.modal.fade {
+  opacity: 1;
+}
+
+.modal.fade .modal-dialog, .modal.in .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
 }
